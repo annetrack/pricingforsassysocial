@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5effd">
+<title>Your Funnel Strategy & Build Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#251044;--purple:#7040cf;--pink:#ed5da8;--lav:#f3edfc;--lav2:#e5d7fa;--paper:#fffaff;--ink:#282032;--muted:#70677d;--line:#e4d8f2;--white:#fff;--green:#dcebe1;--shadow:0 18px 45px #38205e12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);font-family:"DM Sans",sans-serif;color:var(--ink);line-height:1.65}a{color:inherit}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+header{padding:19px 0;border-bottom:1px solid #e8dff4;background:#fff9}nav{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-family:"Playfair Display",serif;font-size:1.3rem;font-weight:700;text-decoration:none;color:var(--plum)}.brand span{color:var(--pink)}.prepared{font-size:.75rem;color:var(--muted)}
+.hero{padding:68px 0 58px;background:radial-gradient(ellipse at 82% 10%,#e1d0fa,transparent 48%),linear-gradient(120deg,#faf6ff,#eee4fb)}.eyebrow{display:inline-block;padding:7px 13px;border:1px solid #cbb3ef;border-radius:999px;background:#fff9;color:#6038a0;text-transform:uppercase;letter-spacing:.1em;font-size:.67rem;font-weight:800}
+h1,h2,h3{font-family:"Playfair Display",serif;color:var(--plum)}h1{font-size:clamp(3rem,6.5vw,5.8rem);line-height:1.02;letter-spacing:-.05em;margin:22px 0 18px;font-weight:600}h1 em,h2 em{color:#8d58d2;font-weight:500}.lead{font-size:1.08rem;max-width:760px;color:#56476f}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:13px;text-decoration:none;font-size:.8rem;font-weight:800;border:1px solid #c9b2e9;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.btn-primary{background:var(--pink);border-color:var(--pink);color:white}.btn-secondary{background:#fff9;color:var(--plum)}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin-top:35px;padding-top:22px;border-top:1px solid #d9c7ef}.meta small{display:block;color:var(--muted);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em}.meta strong{font-size:.88rem}
+section{padding:68px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:27px}.kicker{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:#8b5bc5;font-weight:800}.section-head h2,.intro-grid h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.08;letter-spacing:-.04em;margin:8px 0 0}.section-head p{max-width:470px;color:var(--muted);font-size:.9rem;margin:0}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.problem{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 25px #38205e06}.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--lav2);color:#6038a0;font-size:.72rem;font-weight:800}.problem h3{font-size:1.2rem;margin:14px 0 7px}.problem p{font-size:.83rem;color:var(--muted);margin:0}
+.intro-section{background:#fff}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:start}.intro-grid>div>p{color:var(--muted)}.highlight{background:var(--lav);border:1px solid var(--line);border-radius:20px;padding:24px}.highlight strong{display:block;color:var(--plum);margin-bottom:8px}.highlight p{font-size:.88rem;color:#5f536f;margin:0}
+.deliverables{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.deliverable{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff}.deliverable .symbol{width:42px;height:42px;border-radius:13px;background:#f0e6fc;display:grid;place-items:center;color:#7845bf;font-size:1.1rem}.deliverable h3{font-size:1.2rem;margin:14px 0 7px}.deliverable p{font-size:.84rem;color:var(--muted);margin:0}.tag{display:inline-block;margin-top:12px;border-radius:999px;padding:5px 9px;background:#f4edf9;color:#6e4a9e;font-size:.66rem;font-weight:800}
+.journey{background:linear-gradient(130deg,#f6f0fd,#fdf8ff)}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch}.flow-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px 14px}.flow-card:not(:last-child):after{content:"→";position:absolute;right:-13px;top:45%;z-index:2;background:var(--lav);border-radius:50%;width:24px;height:24px;text-align:center;color:#8b58cc;font-weight:800}.flow-card .step{font-size:.65rem;font-weight:800;letter-spacing:.12em;color:#9a6cc8}.flow-card h3{font-family:"DM Sans",sans-serif;font-size:.88rem;margin:8px 0 6px}.flow-card p{font-size:.73rem;color:var(--muted);margin:0}
+.automation-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.automation{border:1px solid var(--line);border-radius:20px;background:#fff;padding:25px}.automation h3{font-size:1.35rem;margin:0 0 12px}.automation ul{margin:0;padding-left:19px;color:var(--muted);font-size:.84rem}.automation li{margin:7px 0}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.phase{border-radius:18px;background:#fff;border:1px solid var(--line);padding:22px}.phase .phase-label{font-size:.66rem;letter-spacing:.12em;color:#8b58cc;font-weight:800}.phase h3{font-size:1.2rem;margin:10px 0 7px}.phase p{font-size:.82rem;color:var(--muted);margin:0}
+.investment{background:var(--plum);color:#fff}.investment h2,.investment h3{color:#fff}.investment .kicker{color:#e5b9fa}.investment p{color:#d9cde7}.investment-grid{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:30px;align-items:start}.investment-card{background:#fff;color:var(--ink);border-radius:22px;padding:26px;min-width:0}.investment-card .label{font-size:.68rem;color:#8155b8;text-transform:uppercase;letter-spacing:.13em;font-weight:800}.investment-card .price{font-family:"Playfair Display",serif;font-size:2.3rem;color:var(--plum);margin:12px 0}.investment-card p{font-size:.8rem;color:var(--muted)}.investment-card .btn{width:100%;margin-top:10px}.tier-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px;align-items:stretch}.tier{border:1px solid #e4d8f2;border-radius:16px;padding:18px;background:#fff;min-width:0;overflow-wrap:anywhere}.tier.featured{border:2px solid #ed5da8;background:#fff9fd}.tier.featured h3{color:var(--plum)}.tier .tier-tag{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#8050b7;font-weight:800}.tier h3{font-family:"DM Sans",sans-serif;font-size:.95rem;margin:9px 0 4px;color:var(--plum)}.tier .tier-price{font-family:"Playfair Display",serif;font-size:1.9rem;color:var(--plum);line-height:1.2}.tier p{font-size:.76rem;color:var(--muted);margin:8px 0}.tier ul{font-size:.75rem;color:var(--muted);padding-left:17px;margin:12px 0}.terms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.term{background:#f7f2fc;border-radius:13px;padding:13px}.term strong{display:block;color:var(--plum);font-size:.8rem}.term span{font-size:.72rem;color:var(--muted)}
+.next-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.next{padding:22px;border-radius:18px;background:#fff;border:1px solid var(--line)}.next b{font-size:.76rem;color:#8757c0}.next h3{font-size:1.2rem;margin:8px 0}.next p{font-size:.82rem;color:var(--muted);margin:0}
+footer{padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.73rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:900px){.investment-grid{grid-template-columns:1fr;gap:26px}.investment-card{max-width:none}}\n@media(max-width:760px){.tier-grid,.terms-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.problem-grid{grid-template-columns:1fr 1fr}.intro-grid,.investment-grid{grid-template-columns:1fr;gap:25px}.flow{grid-template-columns:1fr}.flow-card:not(:last-child):after{content:"↓";right:calc(50% - 12px);top:auto;bottom:-14px}.automation-grid,.timeline,.next-steps{grid-template-columns:1fr}.meta{grid-template-columns:1fr;gap:12px}.hero{padding:48px 0}.hero-actions .btn{width:100%}}
+@media(max-width:480px){.wrap{width:calc(100% - 30px)}.problem-grid,.deliverables{grid-template-columns:1fr}h1{font-size:3.25rem}section{padding:50px 0}.prepared{font-size:.66rem}.brand{font-size:1.15rem}}
+</style></head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="#top">Funnel Strategy<span>.</span></a><span class="prepared">Your funnel proposal · October 2026</span></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+ <span class="eyebrow">Funnel strategy · design · implementation</span>
+ <h1>Turn your offer into<br>a funnel that <em>converts.</em></h1>
+ <p class="lead">Let’s turn your offer into a clear, conversion-focused funnel. We’ll shape the page around what you offer, who you want to reach, and the action you want visitors to take—then connect the agreed forms, tools, APIs, and follow-up steps needed to support that journey.</p>
+ <div class="hero-actions"><a class="btn btn-primary" href="#solution">Explore the funnel plan ↓</a><a class="btn btn-secondary" href="#investment">Review investment ↘</a></div>
+ <div class="meta"><div><small>Your project</small><strong>Funnel strategy & build</strong></div><div><small>Our focus</small><strong>Your offer and audience</strong></div><div><small>Primary goal</small><strong>Turn visits into inquiries</strong></div></div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="section-head"><div><div class="kicker">01 / The opportunity</div><h2>Your offer deserves<br><em>a clear path to yes.</em></h2></div><p>A strong offer needs more than a page that looks good. Prospective customers should quickly understand what you offer, why it matters to them, and exactly what to do next. The funnel will be planned around your audience, offer, and conversion goal—not a generic template.</p></div>
+ <div class="problem-grid">
+  <article class="problem"><span class="num">01</span><h3>The offer is hard to scan</h3><p>If the value, deliverables, or next step are unclear, visitors may leave before understanding why your offer is right for them.</p></article>
+  <article class="problem"><span class="num">02</span><h3>Too many competing actions</h3><p>A focused funnel guides visitors toward one primary action instead of asking them to figure out where to go next.</p></article>
+  <article class="problem"><span class="num">03</span><h3>Benefits need a clear story</h3><p>Visitors need to connect their problem to your solution through a clear message, relevant proof, and specific benefits.</p></article>
+  <article class="problem"><span class="num">04</span><h3>Friction before conversion</h3><p>Unnecessary form fields, unclear booking steps, or missing reassurance can make it harder to take action.</p></article>
+  <article class="problem"><span class="num">05</span><h3>Traffic without a clear next step</h3><p>Social content, referrals, and campaigns work harder when they lead to a dedicated page with a specific conversion goal.</p></article>
+  <article class="problem"><span class="num">06</span><h3>The journey should feel connected</h3><p>From the first page visit to the confirmation message, each step should feel consistent and intentional.</p></article>
+ </div>
+</div></section>
+
+<section class="intro-section"><div class="wrap intro-grid">
+ <div><div class="kicker">02 / Proposed approach</div><h2>Build around the offer,<br><em>not just the page.</em></h2></div>
+ <div><p>We’ll map the conversion goal first, then shape the page flow, messaging hierarchy, calls to action, and form or booking step around that goal. Where included in the selected package, the funnel will connect to CRM and follow-up automation so new leads have a clear next step after submitting.</p><div class="highlight"><strong>Primary objective</strong><p>Create a conversion-focused funnel that explains the offer, builds confidence, and makes the next action obvious—supported by a practical lead capture and follow-up process where included in scope.</p></div></div>
+</div></section>
+
+<section id="solution"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">03 / Funnel deliverables</div><h2>What we’ll plan and build</h2></div><p>A clear, conversion-led foundation. The final page count, content inputs, integrations, and funnel steps will be agreed before production starts.</p></div>
+ <div class="deliverables">
+  <article class="deliverable"><div class="symbol">◎</div><h3>Funnel strategy & structure</h3><p>We’ll clarify who the funnel is for, what the page needs to communicate, and the main action you want visitors to take before design begins.</p><span class="tag">Conversion plan</span></article>
+  <article class="deliverable"><div class="symbol">▤</div><h3>Landing page design & build</h3><p>Build a responsive page that presents the offer, benefits, proof points, and next step in a clear visual hierarchy.</p><span class="tag">Page experience</span></article>
+  <article class="deliverable"><div class="symbol">◷</div><h3>Conversion-focused copy layout</h3><p>Organize the supplied or approved copy into a clear sequence: problem, solution, benefits, offer details, trust, and call to action.</p><span class="tag">Message clarity</span></article>
+  <article class="deliverable"><div class="symbol">✉</div><h3>Lead capture or booking step</h3><p>Connect your main call to action to the agreed form, calendar, CRM, or inquiry step. Where required and agreed, we’ll also configure API-based connections between supported tools.</p><span class="tag">Lead conversion</span></article>
+  <article class="deliverable"><div class="symbol">✓</div><h3>CRM & follow-up connection</h3><p>Connect the funnel to your agreed CRM and follow-up process. This can include supported API connections, field mapping, lead notifications, and automation based on the selected package and confirmed requirements.</p><span class="tag">Connected workflow</span></article>
+  <article class="deliverable"><div class="symbol">▦</div><h3>Mobile QA & handover</h3><p>Test key links, forms, responsive layouts, and the agreed conversion path; provide a walkthrough for managing the funnel.</p><span class="tag">Launch readiness</span></article>
+ </div>
+</div></section>
+
+<section class="journey"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">04 / Funnel journey</div><h2>From first click<br>to next step.</h2></div><p>The funnel will make the journey easy to follow, from understanding the offer through taking the intended action.</p></div>
+ <div class="flow">
+  <article class="flow-card"><div class="step">01 · ATTRACT</div><h3>Landing page visit</h3><p>Visitors arrive from the agreed traffic sources.</p></article>
+  <article class="flow-card"><div class="step">02 · CONNECT</div><h3>Understand the offer</h3><p>Clear messaging explains who it is for and why it helps.</p></article>
+  <article class="flow-card"><div class="step">03 · CONVERT</div><h3>Take action</h3><p>Visitor submits the form, books, or makes the agreed inquiry.</p></article>
+  <article class="flow-card"><div class="step">04 · CONFIRM</div><h3>Confirmation</h3><p>The visitor receives a clear confirmation and next steps.</p></article>
+  <article class="flow-card"><div class="step">05 · FOLLOW UP</div><h3>Lead is nurtured</h3><p>Included follow-up automation helps continue the conversation.</p></article>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="section-head"><div><div class="kicker">05 / Connected follow-up</div><h2>Make the next step<br><em>feel effortless.</em></h2></div><p>Automation is included only where specified in the selected package. The goal is to reduce avoidable manual steps without replacing thoughtful, personal communication.</p></div>
+ <div class="automation-grid">
+  <article class="automation"><h3>Funnel experience</h3><ul><li>One primary conversion goal and clear calls to action</li><li>Form, calendar, CRM, and agreed API/integration connections</li><li>Responsive experience across desktop and mobile</li><li>Confirmation message or next-step guidance after submission</li><li>Testing of the complete visitor-to-conversion path</li></ul></article>
+  <article class="automation"><h3>Optional CRM follow-up layer</h3><ul><li>Store submitted lead details in the agreed CRM</li><li>Notify the team when a new inquiry comes in</li><li>Send approved acknowledgment or follow-up messages</li><li>Apply clear stop conditions when a lead responds or converts</li><li>Keep the follow-up path aligned with the funnel goal</li></ul></article>
+ </div>
+</div></section>
+
+<section class="intro-section"><div class="wrap">
+ <div class="section-head"><div><div class="kicker">06 / Build process</div><h2>Strategy first. Build second.</h2></div><p>A staged process keeps the funnel tied to the business goal and gives both sides clear checkpoints before launch.</p></div>
+ <div class="timeline">
+  <article class="phase"><div class="phase-label">PHASE 01</div><h3>Discover & map</h3><p>We’ll talk through your audience, offer, conversion goal, traffic source, content, and the tools or API connections the funnel needs to work with.</p></article>
+  <article class="phase"><div class="phase-label">PHASE 02</div><h3>Design & build</h3><p>We’ll shape the page flow and visual direction, build the approved funnel, and configure the agreed integrations and API connections where supported.</p></article>
+  <article class="phase"><div class="phase-label">PHASE 03</div><h3>Test & hand over</h3><p>Check mobile layouts, forms, links, and the conversion path; then walk through how to manage the funnel.</p></article>
+ </div>
+</div></section>
+
+<section class="investment" id="investment"><div class="wrap investment-grid">
+ <div><div class="kicker">07 / Project investment</div><h2 style="font-size:clamp(2.5rem,4.5vw,4rem);line-height:1.06;margin:14px 0">A funnel built around<br>your actual workflow.</h2><p>Choose the level of support that fits your current needs—from a focused funnel foundation to a more connected conversion journey. We’ll confirm the final deliverables, content responsibilities, integrations, timeline, and price with you before work begins.</p></div>
+ <div class="investment-card"><div class="label">Project investment</div><h3 style="color:var(--plum);font-size:1.35rem;margin:10px 0 5px">Choose the level of support</h3><p>Take a look at the two options below. We’ll confirm the final deliverables, integrations—including any required API connections—timeline, and investment together before work begins.</p><div class="tier-grid">
+  <article class="tier"><div class="tier-tag">Option 01 · Core</div><h3>Funnel Foundation</h3><div class="tier-price">₱65,000</div><p>A focused funnel to explain the offer and convert visitors into inquiries.</p><ul><li>Funnel goal and page structure planning</li><li>Responsive landing page design and build</li><li>Offer sections and clear calls to action</li><li>One agreed form or booking connection</li><li>Lead capture connection and agreed standard integrations</li><li>Testing, handover guide and walkthrough</li></ul></article>
+  <article class="tier featured"><div class="tier-tag">Recommended · Option 02</div><h3>Complete Client Journey</h3><div class="tier-price">₱80,000</div><p>Funnel Foundation plus a more connected lead follow-up journey.</p><ul><li>Everything in Funnel Foundation</li><li>Expanded funnel flow or additional agreed page/step</li><li>CRM pipeline and lead status setup</li><li>Automated inquiry acknowledgment and follow-up</li><li>Lead notifications and follow-up workflow</li><li>Agreed booking or post-inquiry reminders</li><li>Agreed API/integration connections and end-to-end testing</li><li>Workflow handover and walkthrough</li></ul></article>
+ </div><div class="terms-grid"><div class="term"><strong>Payment</strong><span>50% to start · 50% on handover</span></div><div class="term"><strong>Estimated timeline</strong><span>2–3 weeks, subject to access and scope</span></div><div class="term"><strong>Post-launch</strong><span>30 days of fixes included</span></div></div></div>
+</div></section>
+
+
+</main>
+<footer><div class="wrap foot"><span>Funnel Strategy & Build Proposal</span><span>Prepared for you · October 2026</span></div></footer>
+</body></html>
